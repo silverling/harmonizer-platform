@@ -1,0 +1,7 @@
+torch
+torchvision
+kornia
+opencv-python
+
+fastapi
+uvicorn

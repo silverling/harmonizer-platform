@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: SmileySans;
+    font-weight: 500;
+    src: url(/src/assets/font/SmileySans-Oblique.ttf.subset.woff2) format("woff2");
+  }
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  overflow: hidden;
+  /* background-image: url("/src/assets/cool-background.svg"); */
+  /* background-size: cover; */
+}
+
+/* Separate rule for compatibility, :focus-within is required on modern Firefox and Chrome */
+input:focus + label {
+  outline: thin dotted;
+}
+
+input:focus-within + label {
+  outline: thin dotted;
+}
+
+.lil-gui * {
+  font-family: "FiraCode Nerd Font", "Courier New", Courier, monospace;
+}
